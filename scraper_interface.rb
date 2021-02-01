@@ -9,7 +9,18 @@ class scraper
     @url = site_url
   end
 
-  
+  def container(*tags)
+    tag_list = []
+    tag_list = tags
+    address = ""
+    a = parse_url.css(tag_list[0])
+
+    tag_list.each do |v|
+      comma = "#{v}" + ", "
+      address.concat(comma)
+    end
+    a.css(tag)
+  end  
 
     private
   def parse_url
