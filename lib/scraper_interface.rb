@@ -1,28 +1,25 @@
+class Scraper
+  attr_accessor :url
 
-# rubocop:disable Metrics/CyclomaticComplexity
-# rubocop:disable Metrics/PerceivedComplexity
-
-class scraper
-  attr_reader :url
-
-  def initialize (site_url)
+  def initialize(site_url)
     @url = site_url
   end
 
   def container(*tags)
-    info = parse_url.css(tag_list[0])
-    tags.each_with_index do |v, i|
+    info = parse_url.css(tags[0])
+    tags.each_with_index do |_v, i|
       break if tags.length < 2
 
-      iin = info.css(tags[i+1])
-      info = inn
+      iin = info.css(tags[i + 1])
+      info = iin
       break if i == tags.length - 2
     end
     info
-  end  
+  end
 
-    private
+  private
+
   def parse_url
-    Nokogiri::HTML(URI.open(self.url))
-  end  
+    Nokogiri::HTML(URI.open(url))
+  end
 end
