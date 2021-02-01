@@ -4,6 +4,7 @@ require 'nokogiri'
 require 'httparty'
 require 'byebug'
 require 'open-uri'
+require_relative '../lib/interface'
 
 # Scoreboard_content__2hMP-__web-inspector-hide-shortcut__'
 # div.ml-bs-u
@@ -55,29 +56,3 @@ end
 scraper
 
 
-
-
-# Fetch and parse HTML document
-# doc = Nokogiri::HTML(URI.open('https://nokogiri.org/tutorials/installing_nokogiri.html'))
-# doc = Nokogiri::HTML(URI.open('https://www.espn.com/nba/scoreboard/_/date/20210129'))
-
-
-# Search for nodes by css
-# doc.css('nav ul', 'article h2').each do |link|
-#   puts link.content
-# end
-
-# doc.css('section.col-b article tr.away').each do |link|
-#   puts link.content
-# end
-
-
-# Search for nodes by xpath
-# doc.xpath('//nav//ul.menu//li/a', '//article//h2').each do |link|
-#   puts link.content
-# end
-
-# # Or mix and match
-# doc.search('nav ul.menu li a', '//article//h2').each do |link|
-#   puts link.content
-# end
