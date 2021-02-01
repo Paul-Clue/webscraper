@@ -10,16 +10,15 @@ class scraper
   end
 
   def container(*tags)
-    tag_list = []
-    tag_list = tags
-    address = ""
-    a = parse_url.css(tag_list[0])
+    info = parse_url.css(tag_list[0])
+    tags.each_with_index do |v, i|
+      break if tags.length < 2
 
-    tag_list.each do |v|
-      comma = "#{v}" + ", "
-      address.concat(comma)
+      iin = info.css(tags[i+1])
+      info = inn
+      break if i == tags.length - 2
     end
-    a.css(tag)
+    info
   end  
 
     private

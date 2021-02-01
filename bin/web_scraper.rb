@@ -4,16 +4,10 @@ require 'nokogiri'
 require 'httparty'
 require 'byebug'
 require 'open-uri'
-require_relative '../lib/interface'
-
-# Scoreboard_content__2hMP-__web-inspector-hide-shortcut__'
-# div.ml-bs-u
-# https://github.com/sparklemotion/mechanize
+# require_relative '../lib/interface'
 
 def scraper
   url = 'https://prosearch.tribeofnoise.com/search/index'
-  # raw_page = HTTParty.get(url)
-  # noko_page = Nokogiri::HTML(url)
   noko_page = Nokogiri::HTML(URI.open(url))
 
   d1 = noko_page.css('div.main-wrapper')
@@ -27,13 +21,7 @@ def scraper
   d9 = d8.css('div.c-song')
   d10 = d9.css('div.c-song__title')
   d11 = d10.css('a.c-song__artist')
-  # d4 = d3.css('')
-  # d4 = d3.css('')
-  # d4 = d3.css('')
-  # d4 = d3.css('')
   # byebug
-
-  song_list ={}
   output = []
   head = "Artist              |              Song"
   skip = d6[0].css('div.c-song__title').text
@@ -42,17 +30,15 @@ def scraper
     song5 = d6[i].css('a.c-song__artist').text
     next unless (song4 == skip) == false
 
-    song_list.merge!(song5 => song4)
     output.append("#{song5}                 #{song4}")
   end  
   puts head
   puts "--------------------------------------------------"
   output.each do |v|
     puts "#{v}\n"
-  end 
+  end
 
 end  
 
 scraper
-
 
