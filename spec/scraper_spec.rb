@@ -27,8 +27,8 @@ describe Scraper do
       expect(check.text).to eq('Say Goodbye (ft.Doug Moore) Featured')
     end
 
-    it 'raises error because #container must be passed an arguement' do
-    expect { scrap.container() }.to raise_exception(an_instance_of(ArgumentError))
+    it 'raises error because #parse_url is a private method' do
+    expect { scrap.parse_url }.to raise_exception(an_instance_of(NoMethodError))
     end
   end
 end
