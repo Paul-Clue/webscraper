@@ -1,4 +1,3 @@
-# spec/scraper_spec.rb
 # rubocop:disable Layout/LineLength
 
 require './lib/scraper_interface'
