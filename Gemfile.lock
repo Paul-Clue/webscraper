@@ -11,9 +11,12 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2020.1104)
     multi_xml (0.6.0)
+    nokogiri (1.11.1-x64-mingw32)
+      racc (~> 1.4)
     parallel (1.20.1)
     parser (3.0.0.0)
       ast (~> 2.4.1)
+    racc (1.5.2)
     rainbow (3.0.0)
     rexml (3.2.4)
     rubocop (0.81.0)
@@ -33,6 +36,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   httparty
+  nokogiri
   rubocop (~> 0.81.0)
 
 BUNDLED WITH
