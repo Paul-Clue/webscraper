@@ -28,7 +28,7 @@ describe Scraper do
     end
 
     it 'raises error because #parse_url is a private method' do
-    expect { scrap.parse_url }.to raise_exception(an_instance_of(NoMethodError))
+      expect { scrap.parse_url }.to raise_exception(an_instance_of(NoMethodError))
     end
   end
 end
