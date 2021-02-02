@@ -22,6 +22,12 @@
 - Use those tags/containers as arguements for the container function: `instance_variable.container(tags/containers)`
 - Use the value from `instance_variable.container(tags/containers)` in a loop that returns the desired information you are seeking.
 
+## ScreenShots
+- The first screenshot is of what the scraper returns scraping the site.
+- The second screenshot is of the site that was scraped.
+<img align="left" alt="Terminal" width="100px" src="./img/Screenshot_one.png" />
+<img align="left" alt="Terminal" width="100px" src="./img/Screenshot_two.png" />
+
 
 ## AUTHOR
 👤 **Paul Clue**
