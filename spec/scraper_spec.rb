@@ -27,7 +27,7 @@ describe Scraper do
       expect(check.text).to eq('Say Goodbye (ft.Doug Moore) Featured')
     end
 
-    it 'raises error because #parse_url is a private method' do
+    it 'raises exception because #parse_url is a private method' do
       expect { scrap.parse_url }.to raise_exception(an_instance_of(NoMethodError))
     end
   end
