@@ -2,7 +2,7 @@
  This is an implementation of a web scraper. A web scraper gleans desired information from web pages. I used ruby for this implementaion. 
 
 # This code includes the utilization of 
-- Of Nokogiri
+- ruby gem Nokogiri
 
 ## Built With
 - Ruby
