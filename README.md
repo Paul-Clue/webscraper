@@ -25,8 +25,8 @@
 ## ScreenShots
 - The first screenshot is of what the scraper returns scraping the site.
 - The second screenshot is of the site that was scraped.
-<img align="left" alt="Terminal" width="250px" src="./img/Screenshot_one.png" />
-<img  alt="Terminal" width="250px" src="./img/Screenshot_two.png" />
+<img align="left" alt="Terminal" width="400px" src="./img/Screenshot_one.png" />
+<img  alt="Terminal" width="400px" src="./img/Screenshot_two.png" />
 
 
 ## AUTHOR
