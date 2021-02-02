@@ -1,3 +1,5 @@
+# lib/scraper_interface.rb
+
 class Scraper
   attr_accessor :url
 
