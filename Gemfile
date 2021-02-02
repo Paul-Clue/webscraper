@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+gem 'byebug'
+gem 'httparty'
+gem 'nokogiri'
+gem 'rubocop', '~>0.81.0'
+ruby '2.6.6'
