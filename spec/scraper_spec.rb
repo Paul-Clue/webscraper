@@ -26,6 +26,10 @@ describe Scraper do
       check = scrap.container('main#main-content', 'div.o-container', 'div#search-results', 'table.c-table', 'tbody', 'tr#song_row_31951', 'td.c-table__cell', 'div.c-song', 'div.c-song__title')
       expect(check.text).to eq('Say Goodbye (ft.Doug Moore) Featured')
     end
+
+    it 'raises error because #container must be passed an arguement' do
+    expect { scrap.container() }.to raise_exception(an_instance_of(ArgumentError))
+    end
   end
 end
 
