@@ -1,7 +1,5 @@
 # "Ruby Web Scraper"
  This is an implementation of a web scraper. A web scraper gleans desired information from web pages. I used ruby for this implementaion. 
-## Screenshot
-![](assets/screenshot.png)
 
 # This code includes the utilization of 
 - Of Nokogiri
@@ -17,12 +15,12 @@
 - run web_scraper.rb to scrape from a site that I have loaded in the file already.
 
 ## Instructions
-- Make an instance of the Scraper class: 'instance_variable = Scraper.new(url)'
+- Make an instance of the Scraper class: `instance_variable = Scraper.new(url)`
 - Enter a url of the site that you want to scrape as an arguement.
 - Traverse the site's DOM tree using your web browser's inspect tool.
 - Make a note of the tags/containers that hold the information you want to scrape.
-- Use those tags/containers as arguements for the container function: 'instance_variable.container(tags/containers)'
-- Use the value from 'instance_variable.container(tags/containers)' in a loop that returns the desired information you are seeking.
+- Use those tags/containers as arguements for the container function: `instance_variable.container(tags/containers)`
+- Use the value from `instance_variable.container(tags/containers)` in a loop that returns the desired information you are seeking.
 
 
 ## AUTHOR
